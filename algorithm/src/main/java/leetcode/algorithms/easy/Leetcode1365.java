@@ -1,7 +1,5 @@
 package leetcode.algorithms.easy;
 
-import java.util.LinkedHashSet;
-
 
 /**
  * [有多少小于当前数字的数字]
