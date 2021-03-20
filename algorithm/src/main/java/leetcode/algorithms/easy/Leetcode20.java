@@ -1,6 +1,5 @@
 package leetcode.algorithms.easy;
 
-import org.apache.commons.lang3.StringUtils;
 
 import java.util.Stack;
 
@@ -23,7 +22,7 @@ public class Leetcode20 {
 
 
     public boolean isValid(String s) {
-        if(StringUtils.isBlank(s)){
+        if(s == null || s.length() == 0){
             return true;
         }
        Stack<Character> result = new Stack<>();
