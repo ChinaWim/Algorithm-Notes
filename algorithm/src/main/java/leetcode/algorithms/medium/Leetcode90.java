@@ -20,12 +20,15 @@ public class Leetcode90 {
     public static void main(String[] args) {
         Leetcode90 l = new Leetcode90();
         int[] nums = new int[]{4,4,4,1,4};
-        Arrays.sort(nums);
+
         List<List<Integer>> lists = l.subsetsWithDup(nums);
+        List<List<Integer>> list2 = l.subsetsWithDup2(nums);
         System.out.println(lists);
+        System.out.println(list2);
     }
 
     public List<List<Integer>> subsetsWithDup(int[] nums) {
+        Arrays.sort(nums);
         List<List<Integer>> result = new ArrayList<>();
         result.add(new ArrayList<>());
         int[] array = new int[nums.length];
@@ -58,5 +61,34 @@ public class Leetcode90 {
             this.dfs(step + 1,i+1,nums,array,valueSet);
         }
     }
+
+
+
+    //正确做法-非dfs
+    public List<List<Integer>> subsetsWithDup2(int[] nums) {
+        Arrays.sort(nums);
+        List<List<Integer>> result = new ArrayList<>();
+        result.add(new ArrayList<>());
+        result.add(Collections.singletonList(nums[0]));
+        int lastLength = 1;
+        for(int i = 1; i < nums.length; i ++){
+            int size = result.size();
+            if(nums[i] != nums[i - 1]){
+                lastLength = result.size();
+            }
+//            int p = 0;
+            for(int j = size - lastLength; j < size; j ++){
+                List<Integer> lastList = new ArrayList<>(result.get(j));
+                lastList.add(nums[i]);
+                result.add(lastList);
+//                p ++;
+            }
+//            lastLength = p;
+        }
+        return result;
+    }
+
+
+
 
 }
