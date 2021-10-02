@@ -39,6 +39,12 @@ import java.util.HashMap;
  *     return ans;
  * }
  *
+ * 原码+反码 = 2n次方 - 1
+ * 原码+反码+1 = 2 n次方
+ * 反码+1 = 2n次方-原码
+ * 负数=补码的补码=2n次方+负数=2n次方+x
+ *
+ *
  */
 public class Leetcode405 {
 
