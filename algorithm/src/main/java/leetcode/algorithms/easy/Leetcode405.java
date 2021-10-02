@@ -49,6 +49,9 @@ public class Leetcode405 {
     }
 
     public String toHex(int num) {
+        if(num == 0){
+            return "0";
+        }
         HashMap<Long, Character> charData = new HashMap<>(6);
         charData.put(10L, 'a');
         charData.put(11L, 'b');
