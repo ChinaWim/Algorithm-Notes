@@ -1,6 +1,5 @@
 package leetcode.algorithms.medium.Leetcode1305;
 
-import com.sun.org.apache.regexp.internal.RE;
 import leetcode.algorithms.medium.leetcode173.BSTIterator;
 
 import java.util.*;
