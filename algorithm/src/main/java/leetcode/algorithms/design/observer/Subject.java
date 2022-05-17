@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 /**
  * @description:
- * @author: panweiming panweiming1@shein.com
+ * @author:
  * @create: 2021-12-22 14:12
  **/
 public abstract class Subject{

@@ -2,7 +2,7 @@ package leetcode.algorithms.design.chainpattern;
 
 /**
  * @description:
- * @author: panweiming panweiming1@shein.com
+ * @author:
  * @create: 2021-12-14 17:38
  **/
 public class ChainPatternDemo{

@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
  * 字母异位词 是由重新排列源单词的字母得到的一个新单词，所有源单词中的字母通常恰好只用一次。例如，"dacb" 是 "abdc" 的一个字母异位词。
  *
  *
- * @author: panweiming panweiming1@shein.com
+ * @author:
  * @create: 2022-05-15 10:35
  **/
 public class Leetcode5234{

@@ -2,7 +2,7 @@ package leetcode.algorithms.design.observer;
 
 /**
  * @description:
- * @author: panweiming panweiming1@shein.com
+ * @author:
  * @create: 2021-12-22 14:21
  **/
 public class ConcreteObserver implements Observer{

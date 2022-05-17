@@ -4,7 +4,7 @@ import leetcode.algorithms.design.observer.Subject;
 
 /**
  * @description:
- * @author: panweiming panweiming1@shein.com
+ * @author:
  * @create: 2021-12-22 14:19
  **/
 public class ConcreteSubject extends Subject{

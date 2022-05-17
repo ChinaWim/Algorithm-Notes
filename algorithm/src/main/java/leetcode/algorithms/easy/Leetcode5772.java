@@ -2,7 +2,7 @@ package leetcode.algorithms.easy;
 
 /**
  * @Description:
- * @Author panweiming Email:panweiming@shein.com
+ * @Author
  * @Date create in 2021/5/30 10:44
  */
 public class Leetcode5772 {

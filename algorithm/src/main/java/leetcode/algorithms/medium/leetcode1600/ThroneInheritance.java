@@ -4,7 +4,7 @@ import java.util.*;
 
 /**
  * @Description:  皇位继承顺序
- * @Author panweiming Email:panweiming@shein.com
+ * @Author
  * @Date create in 2021/6/20 15:42
  *
  * 一个王国里住着国王、他的孩子们、他的孙子们等等。每一个时间点，这个家庭里有人出生也有人死亡。

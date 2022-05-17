@@ -8,7 +8,7 @@ import java.util.Stack;
  * @description: 给定两个 非空链表 l1和 l2 来代表两个非负整数。数字最高位位于链表开始位置。它们的每个节点只存储一位数字。将这两数相加会返回一个新的链表。
  * <p>
  * 可以假设除了数字 0 之外，这两个数字都不会以零开头。
- * @author: panweiming panweiming1@shein.com
+ * @author:
  * @create: 2021-12-03 15:03
  **/
 public class Leetcode25{

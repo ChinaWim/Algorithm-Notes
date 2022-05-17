@@ -12,7 +12,7 @@ package leetcode.algorithms.week.week293;
  * 返回按位与结果大于 0 的 最长 组合的长度。
  *
  *
- * @author: panweiming panweiming1@shein.com
+ * @author:
  * @create: 2022-05-15 11:45
  **/
 public class Leetcode6065{
