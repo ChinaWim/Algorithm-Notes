@@ -40,6 +40,25 @@ public class Leetcode669 {
         return result;
     }
 
+    /**
+     * 优化
+     */
+    public TreeNode trimBST2(TreeNode root, int low, int high) {
+        if(root == null){
+            return null;
+        }
+        TreeNode result = root;
+        if(root.val < low){
+            return trimBST(root.right, low, high);
+        }if(root.val > high){
+            return trimBST(root.left, low, high);
+        } else {
+            result.left = trimBST(root.left, low, high);
+            result.right = trimBST(root.right, low, high);
+        }
+        return result;
+    }
+
 
     public static void main(String[] args) {
         Leetcode669 l = new Leetcode669();
