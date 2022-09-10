@@ -14,24 +14,28 @@ package leetcode.algorithms.medium.leetcode669;
 public class Leetcode669 {
 
 
-
-
+    /**
+     * TIP:考点【后续遍历】
+     *
+     *
+     */
     public TreeNode trimBST(TreeNode root, int low, int high) {
         if(root == null){
             return null;
         }
         TreeNode result = root;
+        TreeNode left = trimBST(root.left, low, high);
+        TreeNode right = trimBST(root.right, low, high);
+
         if(root.val < low  || root.val > high){
-            TreeNode left = trimBST(root.left, low, high);
-            TreeNode right = trimBST(root.right, low, high);
             if(left == null && right == null){
                 result = null;
             }else {
                 result = left == null ? right:left;
             }
         }else {
-            result.left = trimBST(root.left, low, high);
-            result.right = trimBST(root.right, low, high);
+            result.left = left;
+            result.right = right;
         }
         return result;
     }
